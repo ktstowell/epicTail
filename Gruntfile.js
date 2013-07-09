@@ -38,8 +38,7 @@ module.exports = function (grunt) {
             livereload: {
                 files: [
                     '<%= yeoman.app %>/*.html',
-                    '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
-                    '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '<%= yeoman.app %>/styles/{,*/}*.css',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}'
                 ],
                 tasks: ['livereload']
@@ -56,7 +55,7 @@ module.exports = function (grunt) {
                     middleware: function (connect) {
                         return [
                             lrSnippet,
-                            mountFolder(connect, '.tmp'),
+                            // mountFolder(connect, '.tmp'),
                             mountFolder(connect, 'app')
                         ];
                     }
@@ -66,7 +65,7 @@ module.exports = function (grunt) {
                 options: {
                     middleware: function (connect) {
                         return [
-                            mountFolder(connect, '.tmp'),
+                            mountFolder(connect, 'app'),
                             mountFolder(connect, 'test')
                         ];
                     }
@@ -134,11 +133,11 @@ module.exports = function (grunt) {
             }
         },
         compass: {
-            options: {
-                cssDir: '.tmp/styles',
+              options: {
+                cssDir: '<%= yeoman.app %>/styles/compiled',
                 sassDir: '<%= yeoman.app %>/styles',
                 imagesDir: '<%= yeoman.app %>/images',
-                javascriptsDir: '.tmp/scripts',
+                javascriptsDir: '<%= yeoman.app %>/scripts/compiled',
                 relativeAssets: true,
                 force: true
             },
@@ -199,9 +198,8 @@ module.exports = function (grunt) {
         cssmin: {
             dist: {
                 files: {
-                    '<%= yeoman.dist %>/styles/index.css': [
-                        '.tmp/styles/{,*/}*.css',
-                        '<%= yeoman.app %>/styles/{,*/}*.css'
+                    '<%= yeoman.dist %>/styles/main.css': [
+                        '<%= yeoman.app %>/styles/compiled/*.css'
                     ]
                 }
             }
@@ -236,6 +234,8 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>',
                     src: [
                         '*.{ico,txt}',
+                        'scripts/libs/*.js',
+                        'scripts/*.js',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}'
                     ]
@@ -258,7 +258,6 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
-            'coffee:dist',
             'compass:server',
             'livereload-start',
             'connect:livereload',
@@ -281,9 +280,9 @@ module.exports = function (grunt) {
         'compass:dist',
         'useminPrepare',
         'requirejs',
+        'concat',
         'imagemin',
         'htmlmin',
-        'concat',
         'cssmin',
         'uglify',
         'copy',

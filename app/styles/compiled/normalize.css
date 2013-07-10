@@ -5,7 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000322}}
+/* line 22, ../normalize.scss */
 article,
 aside,
 details,
@@ -24,7 +24,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000332}}
+/* line 32, ../normalize.scss */
 audio,
 canvas,
 video {
@@ -35,7 +35,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000341}}
+/* line 41, ../normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -44,7 +44,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000350}}
+/* line 50, ../normalize.scss */
 [hidden] {
   display: none;
 }
@@ -61,7 +61,7 @@ audio:not([controls]) {
  * 4. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000368}}
+/* line 68, ../normalize.scss */
 html {
   background: #fff;
   /* 1 */
@@ -78,7 +78,7 @@ html {
 /**
  * Remove default margin.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000380}}
+/* line 80, ../normalize.scss */
 body {
   margin: 0;
 }
@@ -89,7 +89,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\0000392}}
+/* line 92, ../normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -97,7 +97,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003101}}
+/* line 101, ../normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -110,7 +110,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003114}}
+/* line 114, ../normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -119,7 +119,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003123}}
+/* line 123, ../normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -127,7 +127,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003132}}
+/* line 132, ../normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -136,7 +136,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003140}}
+/* line 140, ../normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -144,7 +144,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003148}}
+/* line 148, ../normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -154,7 +154,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003158}}
+/* line 158, ../normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -163,7 +163,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003170}}
+/* line 170, ../normalize.scss */
 code,
 kbd,
 pre,
@@ -175,7 +175,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003179}}
+/* line 179, ../normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -183,7 +183,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003187}}
+/* line 187, ../normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -191,7 +191,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003195}}
+/* line 195, ../normalize.scss */
 small {
   font-size: 80%;
 }
@@ -199,7 +199,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003204}}
+/* line 204, ../normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -208,12 +208,12 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003211}}
+/* line 211, ../normalize.scss */
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003215}}
+/* line 215, ../normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -224,7 +224,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003227}}
+/* line 227, ../normalize.scss */
 img {
   border: 0;
 }
@@ -232,7 +232,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003235}}
+/* line 235, ../normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -243,7 +243,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003247}}
+/* line 247, ../normalize.scss */
 figure {
   margin: 0;
 }
@@ -254,7 +254,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003259}}
+/* line 259, ../normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -265,7 +265,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003270}}
+/* line 270, ../normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -278,7 +278,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003284}}
+/* line 284, ../normalize.scss */
 button,
 input,
 select,
@@ -295,7 +295,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003296}}
+/* line 296, ../normalize.scss */
 button,
 input {
   line-height: normal;
@@ -307,7 +307,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003308}}
+/* line 308, ../normalize.scss */
 button,
 select {
   text-transform: none;
@@ -320,7 +320,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003323}}
+/* line 323, ../normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -334,7 +334,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003333}}
+/* line 333, ../normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -344,7 +344,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003343}}
+/* line 343, ../normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -358,7 +358,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003354}}
+/* line 354, ../normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -372,7 +372,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003367}}
+/* line 367, ../normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -381,7 +381,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003376}}
+/* line 376, ../normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -392,7 +392,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003386}}
+/* line 386, ../normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -406,7 +406,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ktstowell\/Sites\/guild-builder-parser\/app\/styles\/normalize\.scss}line{font-family:\00003399}}
+/* line 399, ../normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;

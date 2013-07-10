@@ -21,8 +21,8 @@ var worker = this;
  * @param  {[type]} e event object
  * @param {opts}   plugin options from the dom
  */
-worker.addEventListener('message', function(e, opts) {
-  new epicTail(e, opts);
+worker.addEventListener('message', function(e) {
+  new epicTail(e);
 }, false);
 
 /*******************************************************************************************************
@@ -32,14 +32,14 @@ worker.addEventListener('message', function(e, opts) {
  * @dependency
  * @author         
  */
-var epicTail = function(e, opts) {
+var epicTail = function(e) {
   var self = this;
   
   /**
    * Options
    * @type {[type]}
    */
-  opts = opts || {};
+  var opts = e.data || {};
 
   /**
    * Event Target
@@ -51,7 +51,7 @@ var epicTail = function(e, opts) {
    * File
    * @type {[type]}
    */
-  this.file = e.data || false;
+  this.file = e.data.file || false;
 
   /**
    * Default options
@@ -70,6 +70,12 @@ var epicTail = function(e, opts) {
    * @type {Number}
    */
   this.defaults.interval = 3000;
+
+  /**
+   * Callback
+   * @return {[type]} [description]
+   */
+  this.defaults.callback = function() {};
 
   /**
    * Extended Options
@@ -101,7 +107,7 @@ var epicTail = function(e, opts) {
   this.fEnd;
 
   // Launch the reader
-  (this.file) ? this.read() : this.post('no file');
+(this.file) ? this.read() : function() {throw JSON.stringify('no file')};
 };
 
 /**
@@ -124,13 +130,28 @@ epicTail.prototype.read = function() {
     self.reader.onloadend = function() {
       // If the readystate is "done"
       if(self.reader.readyState === 2) {
-        // Send the data back to the main thread
-        worker.postMessage(self.reader.result);
+        switch(self.opts.action) {
+          case 'match': self.match(self.reader.result);
+            break;
+          default: worker.postMessage(self.reader.result);
+            break;
+        }
         // set the new starting pointer
         self.fBeg = self.fEnd+1;
       }
     }
   }, self.opts.interval);
+};
+
+epicTail.prototype.match = function(res) {
+  var self = this,
+      seg = res.split(/\r?\n/);
+
+  for(var i=0; i<seg.length; i++) {
+    if(seg[i].match(self.opts.query)) {
+      worker.postMessage('true');
+    }
+  }
 };
 
 /**

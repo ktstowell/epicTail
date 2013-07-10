@@ -1,28 +1,28 @@
+'use strict';
+
 /*global define */
-define([], function () {
-    'use strict';
-    
+define(['app'], function () {
     var input = document.getElementById('file'),
         opts = {};
+
+    opts.action = 'match';
+    opts.query = 'that';
 
     input.addEventListener('change', parseFile, false);
 
     function parseFile(e) {
-      var file = e.target.files[0],
-          seg;
+      var seg;
+      opts.file = e.target.files[0];
 
       var worker = new Worker('scripts/epicTail.js');
 
       worker.addEventListener('message', function(d) {
         if(d.data !== "" && d.data !== undefined) {
-          seg = d.data.split(/\r?\n/);
-          for(var i=0;i<seg.length;i++) {
-            $('body').append(seg[i]+"<br />");
-          }
+          $('body').append(d.data + "<br />");
         }
       }, false);
       
-      worker.postMessage(file);
+      worker.postMessage(opts);
     }
 
     return this;

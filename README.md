@@ -11,14 +11,19 @@ Simply type `bower install epicTail` or clone this repo.
 * Copy either file in /build to a directory that gets served in your app. 
 * In your place of choice, simple says something like:
   `var tail = new Worker('path/to/build/file');`
-
+  To pass it options:
+    var opts = {
+      file: <file from FormData>,
+      interval: 1000
+    }
+    tail.postMessage(opts);
 ### Options
 
 * file
   File to parse as tail -f. Must be consumed through FileData API (i.e uploaded in a form by a user).
     			
 * interval
-  Time in MS in which to loop over file blobs.
+  Time in MS in which to loop over file blobs. Default is 3000.
   
 * action
   Method passed to worker for extra functionality. See available actions below.

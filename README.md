@@ -17,6 +17,11 @@ Simply type `bower install epicTail` or clone this repo.
       interval: 1000
     }
     tail.postMessage(opts);`
+
+  It is important to note that you should *only* call epicTail with `new` the *first* time you call it.
+  This is because of the way the Web Worker API works. We have the same channels of communication for when we instantiate the webworker as when we want to simply pass data to it.
+  To update the options for the instance of the web worker that you created with `new`, simply do `tail.postMessage(newOpts);`
+
 ### Options
 
 * file

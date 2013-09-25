@@ -61,7 +61,7 @@ If no action method is passed, it simply returns the entire blob for that interv
 
 ### Plans
 
-Right now there's some relational disconnect in teh way options are passed to the worker. Future release aim to build a system that makes sense.
+Right now there's some relational disconnect in the way options are passed to the worker. Future release aim to build a system that makes sense.
 
 Offer more functionality than essentially matching.
 

@@ -11,12 +11,12 @@ Simply type `bower install epicTail` or clone this repo.
 * Copy either file in /build to a directory that gets served in your app. 
 * In your place of choice, simple says something like:
   `var tail = new Worker('path/to/build/file');`
-  To pass it options:
+  `To pass it options:
     var opts = {
       file: <file from FormData>,
       interval: 1000
     }
-    tail.postMessage(opts);
+    tail.postMessage(opts);`
 ### Options
 
 * file

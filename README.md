@@ -20,15 +20,19 @@ Simply type `bower install epicTail` or clone this repo.
 ### Options
 
 * file
+
   File to parse as tail -f. Must be consumed through FileData API (i.e uploaded in a form by a user).
     			
 * interval
+
   Time in MS in which to loop over file blobs. Default is 3000.
   
 * action
+
   Method passed to worker for extra functionality. See available actions below.
 
 * escapeText
+
   Use if wanting to parse HTML. Default is false.
 
 ### Methods
@@ -36,12 +40,15 @@ Simply type `bower install epicTail` or clone this repo.
 If no action method is passed, it simply returns the entire blob for that interval.
 
 * match 
+
   Alows a user to match a string of text for against the current blob.
 
 ** query
+
    String that is used in the `match` action match in the file blobs.
 
 ** gmatch
+
    Global match, default false.
    
 * stop

@@ -48,15 +48,16 @@ If no action method is passed, it simply returns the entire blob for that interv
 
   Alows a user to match a string of text for against the current blob.
 
-** query
+ * query
 
    String that is used in the `match` action match in the file blobs.
 
-** gmatch
+ * gmatch
 
    Global match, default false.
    
 * stop
+
   Stops the web worker.
 
 ### Plans

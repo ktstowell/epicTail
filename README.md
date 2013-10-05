@@ -1,6 +1,6 @@
 # epicTail.js
 
-epicTail.js is a dependency-free tail-f simulator written in javascript that run in a web worker.
+epicTail.js is a dependency-free tail-f simulator written in javascript that runs in a web worker.
 
 ### Installation
 
